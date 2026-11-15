@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeConflux FoodFest</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <h1>Conflux FoodFest</h1>
+        <p>Unleashing the Power of Flavours</p>
+        <div id="clock"></div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#activities">Cuisines & Stalls</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Registration</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Conflux FoodFest</h2>
+        <p>
+            Conflux FoodFest is a student-led culinary event where food enthusiasts can experience diverse global cuisines, attend live workshops, and take part in exciting eating challenges.
+        </p>
+        <p> Date: 1st December 2026 </p>
+        <p> Time: 10:00 AM onwards </p>
+        <p> Fees: Rs.150 per Entry / Workshop </p>
+        <p> Venue: IEM CIIE Courtyard & Cafeteria </p>
+    </section>
+
+    <section id="activities">
+        <h2>Featured Stalls & Competitions</h2>
+        <table>
+            <tr>
+                <th>Activity / Stall</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Spice Route Starters</td>
+                <td>A rich collection of traditional and street-style Indian appetizers.</td>
+            </tr>
+            <tr>
+                <td>Quantum Cook-Off</td>
+                <td>Live mystery box cooking competition under time limits.</td>
+            </tr>
+            <tr>
+                <td>Vitality Vegan Vision</td>
+                <td>Students present innovative plant-based healthy dishes and projects.</td>
+            </tr>
+            <tr>
+                <td>Flavour Debug Challenge</td>
+                <td>Blindfolded tasting competition to identify missing or altered ingredients.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Program</th>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Gate Registration & Stall Openings</td>
+            </tr>
+            <tr>
+                <td>10:30 AM</td>
+                <td>Inauguration & Chef Talk</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Quantum Cook-Off (Prelims)</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Grand Feast Lunch Break</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>Spice Route Tasting & Eating Contests</td>
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td>Vitality Vegan Vision Displays</td>
+            </tr>
+            <tr>
+                <td>6:00 PM</td>
+                <td>Culinary Award Ceremony</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="register">
+        <h2>Event Registration Form</h2>
+        <form onsubmit="return checkForm()">
+            <label>Name:</label>
+            <br>
+            <input type="text" id="studentName">
+            <br><br>
+
+            <label>Email:</label>
+            <br>
+            <input type="text" id="studentEmail">
+            <br><br>
+
+            <label>Department:</label>
+            <br>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>CSE AIML</option>
+                <option>ECE</option>
+                <option>EE</option>
+                <option>ME</option>
+            </select>
+            <br><br>
+
+            <label>Select Activity / Workshop:</label>
+            <br>
+            <select id="activity">
+                <option value="">Select Activity</option>
+                <option>Spice Route Starters</option>
+                <option>Quantum Cook-Off</option>
+                <option>Vitality Vegan Vision</option>
+                <option>Flavour Debug Challenge</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: foodfest@example.com</p>
+        <p>Phone: 7908335722</p>
+        <p>Venue: IEM CIIE Courtyard & Cafeteria</p>
+    </section>
+
+    <footer>
+        <p>CONFLUX FOODFEST 2026</p>
+        <p>Student Culinary Technology Event</p>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>
